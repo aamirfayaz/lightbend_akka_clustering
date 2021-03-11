@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.lightbend.cinnamon:cinnamon-common:2.15.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo.lightbend.com/pass/KzSt7qnbT_PkD_tc97wPx_OKu4xWHLK9F8ICkKhLcTjmjHem/commercial-releases/com/lightbend/cinnamon/cinnamon-common/2.15.0/cinnamon-common-2.15.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo.lightbend.com/pass/KzSt7qnbT_PkD_tc97wPx_OKu4xWHLK9F8ICkKhLcTjmjHem/commercial-releases/com/lightbend/cinnamon/cinnamon-common/2.15.0/cinnamon-common-2.15.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

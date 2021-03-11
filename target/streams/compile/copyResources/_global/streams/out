@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/bahwan/code/LAC-Fundamentals-v1/exercises/scala/src/main/resources/telemetry.conf,/home/bahwan/code/LAC-Fundamentals-v1/exercises/scala/target/scala-2.13/classes/telemetry.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/bahwan/code/LAC-Fundamentals-v1/exercises/scala/src/main/resources/logback.xml,/home/bahwan/code/LAC-Fundamentals-v1/exercises/scala/target/scala-2.13/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/bahwan/code/LAC-Fundamentals-v1/exercises/scala/src/main/resources/application.conf,/home/bahwan/code/LAC-Fundamentals-v1/exercises/scala/target/scala-2.13/classes/application.conf)[0m

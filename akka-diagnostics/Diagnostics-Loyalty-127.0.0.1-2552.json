@@ -1,0 +1,409 @@
+{
+  "start-time" : "2021-03-11T08:31:14.545",
+  "akka-version" : "2.6.11",
+  "akka-diagnostics-version" : "1.1.16",
+  "akka-http-version" : "10.2.2",
+  "classpath" : "/tmp/sbt_78ebb6ca/job-1/target/30072290/68a6b8c1/loyalty_2.13-0.1-SNAPSHOT.jar:/tmp/sbt_78ebb6ca/target/093da454/abf28902/jackson-datatype-jdk8-2.10.5.jar:/tmp/sbt_78ebb6ca/target/4eb104ad/65a4d7a3/config-1.4.0.jar:/tmp/sbt_78ebb6ca/target/3f656058/3588b5ba/scala-library-2.13.4.jar:/tmp/sbt_78ebb6ca/target/cbb7416a/86bdcd51/akka-http-core_2.13-10.2.2.jar:/tmp/sbt_78ebb6ca/target/b0e092cb/b17d1cc1/akka-slf4j_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/829907f8/cb34b137/scala-java8-compat_2.13-0.9.0.jar:/tmp/sbt_78ebb6ca/target/91940987/a8ba8cda/cinnamon-prometheus-2.15.0.jar:/tmp/sbt_78ebb6ca/target/0ae641fa/3af46b09/akka-persistence_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/18e2e155/066b4db5/commons-lang3-3.5.jar:/tmp/sbt_78ebb6ca/target/0054cc6e/7b00a7b7/cinnamon-common-2.15.0.jar:/tmp/sbt_78ebb6ca/target/14dbda7f/64d74dbf/akka-coordination_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/5aa60d86/139578d2/akka-cluster-sharding_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/a84a9db5/de51ef4b/scala-parser-combinators_2.13-1.1.2.jar:/tmp/sbt_78ebb6ca/target/7933b30e/4c95462c/akka-protobuf-v3_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/1e4f7f0b/29a67df4/jnr-a64asm-1.0.0.jar:/tmp/sbt_78ebb6ca/target/29aaded0/2ab6b8da/jackson-databind-2.10.5.1.jar:/tmp/sbt_78ebb6ca/target/88b190c3/39790502/jackson-datatype-jsr310-2.10.5.jar:/tmp/sbt_78ebb6ca/target/008a9920/dccb3b8e/jnr-constants-0.9.12.jar:/tmp/sbt_78ebb6ca/target/ece9af9d/110cd150/akka-http_2.13-10.2.2.jar:/tmp/sbt_78ebb6ca/target/cc103e8b/c140e4ce/simpleclient-0.8.0.jar:/tmp/sbt_78ebb6ca/target/2b890117/97705cb7/logback-classic-1.2.3.jar:/tmp/sbt_78ebb6ca/target/3f58089e/3a1689ef/asm-commons-5.0.3.jar:/tmp/sbt_78ebb6ca/target/0fbb229b/40795950/jackson-module-scala_2.13-2.10.5.jar:/tmp/sbt_78ebb6ca/target/43ae6979/be238050/asm-5.0.3.jar:/tmp/sbt_78ebb6ca/target/9499e0aa/9f4f0e8c/slf4j-api-1.7.30.jar:/tmp/sbt_78ebb6ca/target/ad06e874/3fb9012e/lmdbjava-0.7.0.jar:/tmp/sbt_78ebb6ca/target/8c3d8235/d1796059/hpack-1.0.2.jar:/tmp/sbt_78ebb6ca/target/21f7c7fe/347d20a4/agrona-1.8.0.jar:/tmp/sbt_78ebb6ca/target/42c2dee9/312c3310/jackson-dataformat-cbor-2.10.5.jar:/tmp/sbt_78ebb6ca/target/40e80359/d2098d0e/akka-management_2.13-1.0.9.jar:/tmp/sbt_78ebb6ca/target/ca300ecc/35a1865e/cinnamon-akka-http_2.13-2.15.0.jar:/tmp/sbt_78ebb6ca/target/793ee3cd/1b96c5e6/simpleclient_httpserver-0.8.0.jar:/tmp/sbt_78ebb6ca/target/a688f279/4fb57617/cinnamon-scala_2.13-2.15.0.jar:/tmp/sbt_78ebb6ca/target/03d75a5c/1d681335/akka-http-spray-json_2.13-10.2.2.jar:/tmp/sbt_78ebb6ca/target/1053d77f/516a4db8/cinnamon-prometheus-httpserver-2.15.0.jar:/tmp/sbt_78ebb6ca/target/50f0b907/6d19a5aa/jackson-core-2.10.5.jar:/tmp/sbt_78ebb6ca/target/cd1c7b5f/14d77992/HdrHistogram-2.1.12.jar:/tmp/sbt_78ebb6ca/target/9c03a143/9f77b5f0/simpleclient_common-0.8.0.jar:/tmp/sbt_78ebb6ca/target/fbf12f49/de8dec2f/akka-cluster-tools_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/38093657/76f2ba34/jnr-ffi-2.1.9.jar:/tmp/sbt_78ebb6ca/target/7812dc50/03f7a303/akka-diagnostics_2.13-1.1.16.jar:/tmp/sbt_78ebb6ca/target/5d16284a/b0b32e39/akka-actor_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/985d8098/3df2aabe/jffi-1.2.18.jar:/tmp/sbt_78ebb6ca/target/48957848/446e3924/akka-remote_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/3d21e58f/09e50934/akka-distributed-data_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/acfb2418/c8bb3fba/akka-serialization-jackson_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/7fb1516c/7e8fd69f/asn-one-0.4.0.jar:/tmp/sbt_78ebb6ca/target/11031396/0dbe4276/spray-json_2.13-1.3.6.jar:/tmp/sbt_78ebb6ca/target/ed303b66/42ca77b8/akka-management-cluster-http_2.13-1.0.9.jar:/tmp/sbt_78ebb6ca/target/66352c11/d875bee2/jnr-x86asm-1.0.2.jar:/tmp/sbt_78ebb6ca/target/20c84a00/2b8a4122/jackson-module-paranamer-2.10.5.jar:/tmp/sbt_78ebb6ca/target/07f5fa04/b9827313/lz4-java-1.7.1.jar:/tmp/sbt_78ebb6ca/target/13831b37/44316ed4/akka-stream_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/310b7b7e/9f1b8f97/jackson-module-parameter-names-2.10.5.jar:/tmp/sbt_78ebb6ca/target/a59b77a9/9c740daf/cinnamon-java-2.15.0.jar:/tmp/sbt_78ebb6ca/target/98238806/122f75ed/cinnamon-core_2.13-2.15.0.jar:/tmp/sbt_78ebb6ca/target/31914cba/daed874d/paranamer-2.8.jar:/tmp/sbt_78ebb6ca/target/f0b1c3df/dcb6fab4/cinnamon-akka_2.13-2.15.0.jar:/tmp/sbt_78ebb6ca/target/e513dea1/27566b09/akka-parsing_2.13-10.2.2.jar:/tmp/sbt_78ebb6ca/target/30a7ab60/8fa64fae/reactive-streams-1.0.3.jar:/tmp/sbt_78ebb6ca/target/868559e7/2a0bf9ae/asm-tree-5.0.3.jar:/tmp/sbt_78ebb6ca/target/76021700/8eadb881/akka-cluster_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/49bd6463/22111b7f/asm-analysis-5.0.3.jar:/tmp/sbt_78ebb6ca/target/2d0b21aa/eca239bd/jffi-1.2.18-native.jar:/tmp/sbt_78ebb6ca/target/46cc37aa/b040a272/jackson-annotations-2.10.5.jar:/tmp/sbt_78ebb6ca/target/db69e828/4386ba0c/cinnamon-core-java-2.15.0.jar:/tmp/sbt_78ebb6ca/target/a07b7f67/9a5dc337/cinnamon-jvm-metrics-producer-2.15.0.jar:/tmp/sbt_78ebb6ca/target/3ccba42f/2c145835/asm-util-5.0.3.jar:/tmp/sbt_78ebb6ca/target/739c09c9/e683ffe4/akka-pki_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/dc0c1932/8d05bad2/logback-core-1.2.3.jar:/tmp/sbt_78ebb6ca/target/9a51e656/c46b6b30/ssl-config-core_2.13-0.4.2.jar:/root/.cache/coursier/v1/https/repo.lightbend.com/pass/KzSt7qnbT_PkD_tc97wPx_OKu4xWHLK9F8ICkKhLcTjmjHem/commercial-releases/com/lightbend/cinnamon/cinnamon-agent/2.15.0/cinnamon-agent-2.15.0.jar",
+  "configuration-warnings" : [],
+  "system-metrics" : {
+    "heap-init" : 260046848,
+    "heap-max" : 3676307456,
+    "heap-used" : 68302408,
+    "heap-committed" : 388497408,
+    "os-processors" : 8,
+    "mem-pool-0" : {
+      "name" : "Code Cache",
+      "type" : "Non-heap memory",
+      "init" : 2555904,
+      "max" : 251658240,
+      "used" : 14574848,
+      "committed" : 14680064
+    },
+    "mem-pool-1" : {
+      "name" : "Metaspace",
+      "type" : "Non-heap memory",
+      "init" : 0,
+      "max" : -1,
+      "used" : 58117944,
+      "committed" : 63356928
+    },
+    "mem-pool-2" : {
+      "name" : "Compressed Class Space",
+      "type" : "Non-heap memory",
+      "init" : 0,
+      "max" : 1073741824,
+      "used" : 7520072,
+      "committed" : 8044544
+    },
+    "mem-pool-3" : {
+      "name" : "PS Eden Space",
+      "type" : "Heap memory",
+      "init" : 65536000,
+      "max" : 1340080128,
+      "used" : 44187752,
+      "committed" : 176160768
+    },
+    "mem-pool-4" : {
+      "name" : "PS Survivor Space",
+      "type" : "Heap memory",
+      "init" : 10485760,
+      "max" : 18874368,
+      "used" : 0,
+      "committed" : 18874368
+    },
+    "mem-pool-5" : {
+      "name" : "PS Old Gen",
+      "type" : "Heap memory",
+      "init" : 173539328,
+      "max" : 2757230592,
+      "used" : 24114656,
+      "committed" : 193462272
+    }
+  },
+  "configuration" : {
+    "akka" : {
+        "actor" : {
+            "provider" : "cluster",
+            "serialization-bindings" : {
+                "com.reactivebbq.loyalty.SerializableMessage" : "jackson-cbor"
+            }
+        },
+        "cluster" : {
+            "seed-nodes" : [
+                "akka://Loyalty@127.0.0.1:2551",
+                "akka://Loyalty@127.0.0.1:2552"
+            ]
+        },
+        "http" : {
+            "server" : {
+                "default-http-port" : "8001",
+                "server-header" : "akka-http/10.2.2"
+            },
+            "version" : "10.2.2"
+        },
+        "instrumentations" : [
+            "cinnamon.akka.CinnamonActorInstrumentation",
+            "cinnamon.akka.pattern.CinnamonAskPatternInstrumentation"
+        ],
+        "loggers" : [
+            "akka.event.slf4j.Slf4jLogger"
+        ],
+        "logging-filter" : "akka.event.slf4j.Slf4jLoggingFilter",
+        "loglevel" : "DEBUG",
+        "management" : {
+            "http" : {
+                "port" : "8559"
+            }
+        },
+        "remote" : {
+            "artery" : {
+                "canonical" : {
+                    "hostname" : "127.0.0.1",
+                    "port" : "2552"
+                },
+                "transport" : "tcp"
+            }
+        },
+        "version" : "2.6.11"
+    },
+    "awt" : {
+        "toolkit" : "sun.awt.X11.XToolkit"
+    },
+    "cinnamon" : {
+        "akka" : {
+            "actors" : {
+                "/system/sharding/*" : {
+                    "report-by" : "class"
+                },
+                "/user/*" : {
+                    "report-by" : "class"
+                }
+            },
+            "ask-pattern" : {
+                "actors" : {},
+                "instrumented-message-extractor" : {
+                    "extractor-class" : "com.lightbend.cinnamon.akka.pattern.InstrumentedMessageExtractor"
+                },
+                "message-extractor" : "instrumented-message-extractor",
+                "meta" : {
+                    "descriptor" : {
+                        "ask-pattern" : {
+                            "asked-requests" : {
+                                "categories" : [
+                                    "Ask Pattern metrics"
+                                ],
+                                "enabled" : true,
+                                "group-name" : "metrics",
+                                "hints" : [],
+                                "key" : "asked-requests",
+                                "name" : "Asked requests",
+                                "tags" : {},
+                                "unit-plural-suffix" : "msgs",
+                                "unit-suffix" : "msg",
+                                "unit-type" : "custom"
+                            },
+                            "expired-request-event" : {
+                                "categories" : [],
+                                "enabled" : true,
+                                "group-name" : "events",
+                                "hints" : [],
+                                "key" : "expired-request-event",
+                                "name" : "Expired request event",
+                                "tags" : {},
+                                "unit-plural-suffix" : "",
+                                "unit-suffix" : "",
+                                "unit-type" : "none"
+                            },
+                            "expired-requests" : {
+                                "categories" : [
+                                    "Ask Pattern metrics"
+                                ],
+                                "enabled" : true,
+                                "group-name" : "metrics",
+                                "hints" : [],
+                                "key" : "expired-requests",
+                                "name" : "Expired requests",
+                                "tags" : {},
+                                "unit-plural-suffix" : "msgs",
+                                "unit-suffix" : "msg",
+                                "unit-type" : "custom"
+                            },
+                            "expired-requests-by-timeout" : {
+                                "categories" : [
+                                    "Ask Pattern metrics"
+                                ],
+                                "enabled" : true,
+                                "group-name" : "metrics",
+                                "hints" : [],
+                                "key" : "expired-requests",
+                                "name" : "Expired requests",
+                                "tags" : {},
+                                "unit-plural-suffix" : "msgs",
+                                "unit-suffix" : "msg",
+                                "unit-type" : "custom"
+                            },
+                            "failed-request-event" : {
+                                "categories" : [],
+                                "enabled" : true,
+                                "group-name" : "events",
+                                "hints" : [],
+                                "key" : "failed-request-event",
+                                "name" : "Failed request event",
+                                "tags" : {},
+                                "unit-plural-suffix" : "",
+                                "unit-suffix" : "",
+                                "unit-type" : "none"
+                            },
+                            "late-response-time" : {
+                                "categories" : [
+                                    "Ask Pattern metrics"
+                                ],
+                                "enabled" : true,
+                                "group-name" : "metrics",
+                                "hints" : [],
+                                "key" : "late-response-time",
+                                "name" : "Late response time",
+                                "tags" : {},
+                                "unit-plural-suffix" : "",
+                                "unit-suffix" : "",
+                                "unit-type" : "nanoseconds"
+                            },
+                            "success-response-time" : {
+                                "categories" : [
+                                    "Ask Pattern metrics"
+                                ],
+                                "enabled" : true,
+                                "group-name" : "metrics",
+                                "hints" : [],
+                                "key" : "success-response-time",
+                                "name" : "Success response time",
+                                "tags" : {},
+                                "unit-plural-suffix" : "",
+                                "unit-suffix" : "",
+                                "unit-type" : "nanoseconds"
+                            }
+                        }
+                    },
+                    "identity" : {
+                        "actor" : {
+                            "category" : "actors",
+                            "key" : "actor"
+                        },
+                        "message" : {
+                            "aggregated-name" : "_total",
+                            "category" : "messages",
+                            "key" : "message"
+                        },
+                        "timeout" : {
+                            "category" : "timeouts",
+                            "key" : "timeout"
+                        }
+                    }
+                },
+                "noop-message-extractor" : {
+                    "extractor-class" : "com.lightbend.cinnamon.akka.pattern.MessageExtractor$Noop"
+                }
+            },
+            "cluster" : {
+                "node-metrics" : "on",
+                "shard-region-info" : "on"
+            },
+            "dispatchers" : {
+                "basic-information" : {
+                    "names" : [
+                        "*"
+                    ]
+                },
+                "time-information" : {
+                    "names" : [
+                        "*"
+                    ]
+                }
+            },
+            "http" : {
+                "servers" : {
+                    "*:*" : {
+                        "paths" : {
+                            "*" : {
+                                "metrics" : "on"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "defaults" : {
+            "akka" : {
+                "ask-pattern" : {
+                    "actors" : {}
+                }
+            }
+        },
+        "prometheus" : {
+            "exporters" : [
+                "http-server"
+            ],
+            "http-server" : {
+                "host" : "0.0.0.0",
+                "port" : "9002"
+            }
+        }
+    },
+    "excluded-sensitive-paths" : [
+        "user.home",
+        "user.dir",
+        "user.name"
+    ],
+    "file" : {
+        "encoding" : {
+            "pkg" : "sun.io"
+        },
+        "separator" : "/"
+    },
+    "java" : {
+        "awt" : {
+            "graphicsenv" : "sun.awt.X11GraphicsEnvironment",
+            "printerjob" : "sun.print.PSPrinterJob"
+        },
+        "class" : {
+            "path" : "/tmp/sbt_78ebb6ca/job-1/target/30072290/68a6b8c1/loyalty_2.13-0.1-SNAPSHOT.jar:/tmp/sbt_78ebb6ca/target/093da454/abf28902/jackson-datatype-jdk8-2.10.5.jar:/tmp/sbt_78ebb6ca/target/4eb104ad/65a4d7a3/config-1.4.0.jar:/tmp/sbt_78ebb6ca/target/3f656058/3588b5ba/scala-library-2.13.4.jar:/tmp/sbt_78ebb6ca/target/cbb7416a/86bdcd51/akka-http-core_2.13-10.2.2.jar:/tmp/sbt_78ebb6ca/target/b0e092cb/b17d1cc1/akka-slf4j_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/829907f8/cb34b137/scala-java8-compat_2.13-0.9.0.jar:/tmp/sbt_78ebb6ca/target/91940987/a8ba8cda/cinnamon-prometheus-2.15.0.jar:/tmp/sbt_78ebb6ca/target/0ae641fa/3af46b09/akka-persistence_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/18e2e155/066b4db5/commons-lang3-3.5.jar:/tmp/sbt_78ebb6ca/target/0054cc6e/7b00a7b7/cinnamon-common-2.15.0.jar:/tmp/sbt_78ebb6ca/target/14dbda7f/64d74dbf/akka-coordination_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/5aa60d86/139578d2/akka-cluster-sharding_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/a84a9db5/de51ef4b/scala-parser-combinators_2.13-1.1.2.jar:/tmp/sbt_78ebb6ca/target/7933b30e/4c95462c/akka-protobuf-v3_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/1e4f7f0b/29a67df4/jnr-a64asm-1.0.0.jar:/tmp/sbt_78ebb6ca/target/29aaded0/2ab6b8da/jackson-databind-2.10.5.1.jar:/tmp/sbt_78ebb6ca/target/88b190c3/39790502/jackson-datatype-jsr310-2.10.5.jar:/tmp/sbt_78ebb6ca/target/008a9920/dccb3b8e/jnr-constants-0.9.12.jar:/tmp/sbt_78ebb6ca/target/ece9af9d/110cd150/akka-http_2.13-10.2.2.jar:/tmp/sbt_78ebb6ca/target/cc103e8b/c140e4ce/simpleclient-0.8.0.jar:/tmp/sbt_78ebb6ca/target/2b890117/97705cb7/logback-classic-1.2.3.jar:/tmp/sbt_78ebb6ca/target/3f58089e/3a1689ef/asm-commons-5.0.3.jar:/tmp/sbt_78ebb6ca/target/0fbb229b/40795950/jackson-module-scala_2.13-2.10.5.jar:/tmp/sbt_78ebb6ca/target/43ae6979/be238050/asm-5.0.3.jar:/tmp/sbt_78ebb6ca/target/9499e0aa/9f4f0e8c/slf4j-api-1.7.30.jar:/tmp/sbt_78ebb6ca/target/ad06e874/3fb9012e/lmdbjava-0.7.0.jar:/tmp/sbt_78ebb6ca/target/8c3d8235/d1796059/hpack-1.0.2.jar:/tmp/sbt_78ebb6ca/target/21f7c7fe/347d20a4/agrona-1.8.0.jar:/tmp/sbt_78ebb6ca/target/42c2dee9/312c3310/jackson-dataformat-cbor-2.10.5.jar:/tmp/sbt_78ebb6ca/target/40e80359/d2098d0e/akka-management_2.13-1.0.9.jar:/tmp/sbt_78ebb6ca/target/ca300ecc/35a1865e/cinnamon-akka-http_2.13-2.15.0.jar:/tmp/sbt_78ebb6ca/target/793ee3cd/1b96c5e6/simpleclient_httpserver-0.8.0.jar:/tmp/sbt_78ebb6ca/target/a688f279/4fb57617/cinnamon-scala_2.13-2.15.0.jar:/tmp/sbt_78ebb6ca/target/03d75a5c/1d681335/akka-http-spray-json_2.13-10.2.2.jar:/tmp/sbt_78ebb6ca/target/1053d77f/516a4db8/cinnamon-prometheus-httpserver-2.15.0.jar:/tmp/sbt_78ebb6ca/target/50f0b907/6d19a5aa/jackson-core-2.10.5.jar:/tmp/sbt_78ebb6ca/target/cd1c7b5f/14d77992/HdrHistogram-2.1.12.jar:/tmp/sbt_78ebb6ca/target/9c03a143/9f77b5f0/simpleclient_common-0.8.0.jar:/tmp/sbt_78ebb6ca/target/fbf12f49/de8dec2f/akka-cluster-tools_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/38093657/76f2ba34/jnr-ffi-2.1.9.jar:/tmp/sbt_78ebb6ca/target/7812dc50/03f7a303/akka-diagnostics_2.13-1.1.16.jar:/tmp/sbt_78ebb6ca/target/5d16284a/b0b32e39/akka-actor_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/985d8098/3df2aabe/jffi-1.2.18.jar:/tmp/sbt_78ebb6ca/target/48957848/446e3924/akka-remote_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/3d21e58f/09e50934/akka-distributed-data_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/acfb2418/c8bb3fba/akka-serialization-jackson_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/7fb1516c/7e8fd69f/asn-one-0.4.0.jar:/tmp/sbt_78ebb6ca/target/11031396/0dbe4276/spray-json_2.13-1.3.6.jar:/tmp/sbt_78ebb6ca/target/ed303b66/42ca77b8/akka-management-cluster-http_2.13-1.0.9.jar:/tmp/sbt_78ebb6ca/target/66352c11/d875bee2/jnr-x86asm-1.0.2.jar:/tmp/sbt_78ebb6ca/target/20c84a00/2b8a4122/jackson-module-paranamer-2.10.5.jar:/tmp/sbt_78ebb6ca/target/07f5fa04/b9827313/lz4-java-1.7.1.jar:/tmp/sbt_78ebb6ca/target/13831b37/44316ed4/akka-stream_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/310b7b7e/9f1b8f97/jackson-module-parameter-names-2.10.5.jar:/tmp/sbt_78ebb6ca/target/a59b77a9/9c740daf/cinnamon-java-2.15.0.jar:/tmp/sbt_78ebb6ca/target/98238806/122f75ed/cinnamon-core_2.13-2.15.0.jar:/tmp/sbt_78ebb6ca/target/31914cba/daed874d/paranamer-2.8.jar:/tmp/sbt_78ebb6ca/target/f0b1c3df/dcb6fab4/cinnamon-akka_2.13-2.15.0.jar:/tmp/sbt_78ebb6ca/target/e513dea1/27566b09/akka-parsing_2.13-10.2.2.jar:/tmp/sbt_78ebb6ca/target/30a7ab60/8fa64fae/reactive-streams-1.0.3.jar:/tmp/sbt_78ebb6ca/target/868559e7/2a0bf9ae/asm-tree-5.0.3.jar:/tmp/sbt_78ebb6ca/target/76021700/8eadb881/akka-cluster_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/49bd6463/22111b7f/asm-analysis-5.0.3.jar:/tmp/sbt_78ebb6ca/target/2d0b21aa/eca239bd/jffi-1.2.18-native.jar:/tmp/sbt_78ebb6ca/target/46cc37aa/b040a272/jackson-annotations-2.10.5.jar:/tmp/sbt_78ebb6ca/target/db69e828/4386ba0c/cinnamon-core-java-2.15.0.jar:/tmp/sbt_78ebb6ca/target/a07b7f67/9a5dc337/cinnamon-jvm-metrics-producer-2.15.0.jar:/tmp/sbt_78ebb6ca/target/3ccba42f/2c145835/asm-util-5.0.3.jar:/tmp/sbt_78ebb6ca/target/739c09c9/e683ffe4/akka-pki_2.13-2.6.11.jar:/tmp/sbt_78ebb6ca/target/dc0c1932/8d05bad2/logback-core-1.2.3.jar:/tmp/sbt_78ebb6ca/target/9a51e656/c46b6b30/ssl-config-core_2.13-0.4.2.jar:/root/.cache/coursier/v1/https/repo.lightbend.com/pass/KzSt7qnbT_PkD_tc97wPx_OKu4xWHLK9F8ICkKhLcTjmjHem/commercial-releases/com/lightbend/cinnamon/cinnamon-agent/2.15.0/cinnamon-agent-2.15.0.jar",
+            "version" : "52.0"
+        },
+        "endorsed" : {
+            "dirs" : "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"
+        },
+        "ext" : {
+            "dirs" : "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"
+        },
+        "home" : "/usr/lib/jvm/java-8-openjdk-amd64/jre",
+        "io" : {
+            "tmpdir" : "/tmp"
+        },
+        "library" : {
+            "path" : "/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"
+        },
+        "runtime" : {
+            "name" : "OpenJDK Runtime Environment",
+            "version" : "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08"
+        },
+        "specification" : {
+            "name" : "Java Platform API Specification",
+            "vendor" : "Oracle Corporation",
+            "version" : "1.8"
+        },
+        "vendor" : {
+            "url" : {
+                "bug" : "http://bugreport.sun.com/bugreport/"
+            }
+        },
+        "version" : "1.8.0_282",
+        "vm" : {
+            "info" : "mixed mode",
+            "name" : "OpenJDK 64-Bit Server VM",
+            "specification" : {
+                "name" : "Java Virtual Machine Specification",
+                "vendor" : "Oracle Corporation",
+                "version" : "1.8"
+            },
+            "vendor" : "Private Build",
+            "version" : "25.282-b08"
+        }
+    },
+    "line" : {
+        "separator" : "\n"
+    },
+    "os" : {
+        "arch" : "amd64",
+        "name" : "Linux",
+        "version" : "5.8.0-44-generic"
+    },
+    "path" : {
+        "separator" : ":"
+    },
+    "sun" : {
+        "arch" : {
+            "data" : {
+                "model" : "64"
+            }
+        },
+        "boot" : {
+            "class" : {
+                "path" : "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"
+            },
+            "library" : {
+                "path" : "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"
+            }
+        },
+        "cpu" : {
+            "endian" : "little",
+            "isalist" : ""
+        },
+        "io" : {
+            "unicode" : {
+                "encoding" : "UnicodeLittle"
+            }
+        },
+        "java" : {
+            "command" : "com.reactivebbq.loyalty.Main -Dakka.http.server.default-http-port=8001 -Dakka.remote.artery.canonical.port=2552 -Dakka.management.http.port=8559 -Dcinnamon.prometheus.http-server.port=9002",
+            "launcher" : "SUN_STANDARD"
+        },
+        "jnu" : {
+            "encoding" : "UTF-8"
+        },
+        "management" : {
+            "compiler" : "HotSpot 64-Bit Tiered Compilers"
+        },
+        "os" : {
+            "patch" : {
+                "level" : "unknown"
+            }
+        }
+    },
+    "user" : {
+        "country" : "IN",
+        "language" : "en",
+        "timezone" : "Asia/Kolkata"
+    }
+}
+}
+
