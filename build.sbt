@@ -16,10 +16,10 @@ lazy val scalaTestVersion = "3.2.2"
 fork := true
 parallelExecution in ThisBuild := false
 
-scalacOptions ++= Seq(
+/*scalacOptions ++= Seq(
   "-deprecation",
   "-Xfatal-warnings"
-)
+)*/
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http"            % akkaHttpVersion,
@@ -30,7 +30,7 @@ libraryDependencies ++= Seq(
   "com.lightbend.akka.management" %% "akka-management" % akkaManagementVersion,
   "com.lightbend.akka.management" %% "akka-management-cluster-http" % akkaManagementVersion,
   "com.lightbend.akka" %% "akka-diagnostics" % akkaEnhancementsVersion,
-
+  "com.lightbend.akka" %% "akka-split-brain-resolver" % "1.1.16",
   //Logback
   "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
   "ch.qos.logback" % "logback-classic" % logbackVersion,
